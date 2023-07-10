@@ -1,0 +1,45 @@
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* 任意のフォントを指定 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #container {
+    text-align: center;
+  }
+  
+  h1 {
+    writing-mode: vertical-rl; /* 縦書き */
+    text-orientation: mixed; /* 縦書きの方向を指定 */
+    font-size: 2rem;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #button {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+   
+  }
+  
+  #text {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #000000;
+    writing-mode: vertical-rl; /* 縦書きにする */
+    text-orientation: mixed; /* 縦書きの方向を指定 */
+  }
+  
