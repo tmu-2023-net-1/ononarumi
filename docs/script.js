@@ -133,6 +133,27 @@ $("#next2").click(function(){
 
   });
 
+  $("#next4").click(function(){
+  
+    $("#text6").fadeOut();
+    $("#next4").fadeOut();
+    $("#date2").fadeOut();
+    $("#2bun").fadeOut();
+    $("#para2").fadeOut();
+    $("#section5").hide();
+    $("#endress").fadeIn();
+
+    //5秒後にリロードする
+    setTimeout(function(){
+      location.reload();
+    }
+    ,3000);
+
+  
+  });
+
+
+
   $("#day4").click(function(){
     $("#section5").fadeIn();
     $("#day4").fadeOut();
@@ -155,6 +176,7 @@ $("#day2").click(function(){
   $("#choice5").fadeIn();
   $("#choice6").fadeIn();
   $("#day2").fadeOut();
+  $("#endress").hide();
 
  
 

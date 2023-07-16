@@ -74,6 +74,18 @@ body {
     
   }
 
+  #endress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #endress > div {
+    margin-bottom: 10px;
+  }
+  
+
   #date,#choice3,#choice4,#next,#next2,#next3,#next4,#day2,#choice5,#choice6,#choice7,#choice8,#day3,#day4{
 
     /*マウスカーソルを変える*/
@@ -96,7 +108,7 @@ body {
   }
 
   #text1,#text2,#text3,#text4,#text5,#text6,#park,#pool,#next,#next2,#next3,#next4,#section3,#date2,#para2,#me2,#choice5,#choice6
-  #choice7,#gohome,#sea,#day4,#section5{
+  #choice7,#gohome,#sea,#day4,#section5,#endress{
     display: none;
     animation: fadeIn 1s ease-in-out;
   }
