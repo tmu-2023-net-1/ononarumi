@@ -60,6 +60,9 @@ $("#choice4").click(function(){
       $("#choice5").fadeOut();
       $("#choice6").fadeOut();
       $("#text5").fadeIn();
+      $("#next3").fadeIn();
+      //ゆっくり下へスクロール
+      $('html,body').animate({scrollTop:$('#text5').offset().top});
   });
 
   $("#choice6").click(function(){
@@ -67,6 +70,10 @@ $("#choice4").click(function(){
       $("#choice5").fadeOut();
       $("#choice6").fadeOut();
       $("#text6").fadeIn();
+      $("#next4").fadeIn();
+      //ゆっくり下へスクロール
+      $('html,body').animate({scrollTop:$('#text6').offset().top});
+
   });
 
   $("#choice7").click(function(){
@@ -74,6 +81,7 @@ $("#choice4").click(function(){
       $("#choice8").fadeOut();
       $("#choice7").fadeOut();
       $("#gohome").fadeIn();
+
 
   });
   $("#choice8").click(function(){
@@ -120,6 +128,11 @@ $("#day2").click(function(){
 
  
 
+});
+
+//リロードしたらページ上部に戻る
+$(window).on('load',function(){
+  $('html,body').animate({ scrollTop: 0 }, '1');
 });
 
 
