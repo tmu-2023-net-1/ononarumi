@@ -54,7 +54,7 @@ body {
     writing-mode: vertical-rl;
     font-family: 'Noto Serif JP', serif;
     margin-top: 5rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #000000;
     padding-top: 12rem;
   }
@@ -96,7 +96,7 @@ body {
   }
 
   #text1,#text2,#text3,#text4,#text5,#text6,#park,#pool,#next,#next2,#next3,#next4,#section3,#date2,#para2,#me2,#choice5,#choice6
-  #choice7,#gohome,#sea{
+  #choice7,#gohome,#sea,#day4{
     display: none;
     animation: fadeIn 1s ease-in-out;
   }
@@ -155,7 +155,7 @@ body {
       writing-mode: vertical-rl;
       font-family: 'Noto Serif JP', serif;
       margin-top: 5rem;
-      font-size: 1rem;
+      font-size: 0.6rem;
       color: #000000;
       padding-top: 8rem;
     }
@@ -212,7 +212,7 @@ body {
     }
 
     #text1,#text2,#text3,#text4,#text5,#text6,#park,#pool,#next,#next2,#next3,#next4,#section3,#date2,#para2,#me2,#choice5,#choice6
-  #choice7,#gohome,#sea{
+  #choice7,#gohome,#sea,#day4{
     display: none;
     animation: fadeIn 1s ease-in-out;
   }
@@ -220,6 +220,9 @@ body {
    
 
   }
+
+  
+
   
 
   
