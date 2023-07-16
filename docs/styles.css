@@ -1,91 +1,216 @@
-#bodywrap {
+a {color: #000000;text-decoration:underline;}
+a:hover {color: #666666; text-decoration: none; }
+
+
+
+
+
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif JP', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+  
+  #container {
+    /*必ず真ん中に配置*/
+
     display: flex;
     flex-direction: column;
-    height: 100vh; /* ボディ全体の高さを設定 */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
   
-  #title {
-    flex: 1; /* 高さを可変にするために flex: 1 を追加 */
-    background-image: url(/docs/images/title.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-     width: 100%;
-	height:500px;
-
-    margin-top: 100px;
+  #text-wrapper {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-top: 15rem;
   }
-
-
   
-  #first {
-    
-    flex: 1; /* 高さを可変にするために flex: 1 を追加 */
-    background-image: url(/docs/images/firstparagraph.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-	height:315px;
-
-    margin-top: 200px; 
-
+  h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2rem;
+    color: #000000;
+    margin: 0;
+    padding: 0;
   }
-  #weatherwrap {
+  #contents {
+    /*必ず真ん中に配置*/
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 315px;
-    margin-top: 300px;
-  }
-  
-  #weather {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    height: 160px;
+    /*縦書き*/
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif JP', serif;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    color: #000000;
+    padding-top: 12rem;
   }
 
- /*#weather img {
-    margin-top: 50px;
-    max-width: 100%;
-    max-height: 100%;
-  } */
-  #weatherImage1,
-#weatherImage2 {
-  margin-top: 50px;
-  max-width: 30%;
-  max-height: 30%;
-  width: 40%;
-  height: auto;
-  padding-left: 50%;
-  padding-right: 60%;
-}
+  
 
 
-  #weather {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    height: 160px;
-  }
-  
-  
-  
-  #fadeInImage1,#fadeInImage2 {
-    display: none;
-    max-width: 25%;
-    max-height: 25%;
-    width: auto;
-    height: auto;
-  }
-  
-  
-  #harewrap,#amewrap{
+  #date,#section1,#section2,#choice1,#choice2,#text1,#text2{
+    /*縦に並べる*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
   }
+
+  #date,#choice3,#choice4,#next,#next2,#day2,#choice5,#choice6,#choice7,#choice8,#day3{
+
+    /*マウスカーソルを変える*/
+    cursor: pointer;
+   
+
+  }
+
+  #date:hover,#choice3:hover,#choice4:hover,#choice5:hover,#choice6:hover,#next:hover,#next2:hover,#day2:hover,
+  #day3:hover,#choice7:hover,#choice8:hover{
+    /*ホバーすると文字に影がつく*/
+    text-shadow: 0 0 0.5em #000000;
+    transition: all 0.5s;
+  }
+
+  p{
+    padding-top: 4rem;
+    /*文頭は上に揃える*/
+    text-align: start;
+  }
+
+  #text1,#text2,#text3,#text4,#text5,#text6,#park,#pool,#next,#next2,#section3,#date2,#para2,#me2,#choice5,#choice6
+  #choice7,#gohome,#sea{
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  footer{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #000000;
+  }
+
+  #author-info{
+    /*左上に表示*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 0.7rem;
+
+
+  }
+
+  footer{
+    background-color: #f5f5f5;
+    font-size: 0.7rem;
+  }
+  
+
+  /*スマホで表示した時*/
+  @media screen and (max-width: 480px) {
+
+
+    
+    #text-wrapper {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      white-space: nowrap;
+      height: fit-content;
+      margin-top: 20px;
+      padding-top: 10rem;
+    }
+    #contents {
+      /*必ず真ん中に配置*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*縦書き*/
+      writing-mode: vertical-rl;
+      font-family: 'Noto Serif JP', serif;
+      margin-top: 5rem;
+      font-size: 1rem;
+      color: #000000;
+      padding-top: 8rem;
+    }
+    body {
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Serif JP', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: auto;
+      text-align: start;
+
+    }
+
+    h1{
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1rem;
+      /*太字に*/
+      font-weight: bold;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    #author-info{
+      /*左上に表示*/
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      font-size: 0.5rem;
+    }
+
+    #date,#section1,#section2,#choice1,#choice2,#text1,#text2,#text3,#text4{
+      /*縦に並べる*/
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      
+    }
+
+    p{
+      padding-top: 2rem;
+      /*文頭は上に揃える*/
+      text-align: start;
+      font-size: 0.6rem;
+    }
+
+
+   
+
+  }
+  
+
   
