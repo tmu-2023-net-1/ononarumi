@@ -103,10 +103,40 @@ $("#next").click(function(){
 });
 
 $("#next2").click(function(){
+
+  
+  
+  $("#pool").fadeOut();
+  $("#next2").fadeOut();
+  $("#date2").fadeOut();
+  $("#2bun").fadeOut();
+  $("#para2").fadeOut();
+  $("#day2").fadeOut();
   $("#text4").fadeIn();
-  $("day3").fadeIn();
-  $("#section4").hide();
-  $("#text1").fadeOut();});
+  $("#day3").fadeIn();
+  $("#section4").fadeIn();
+  $("#para3").fadeIn();
+  $("#me3").fadeIn();
+  $("#choice7").fadeIn();
+  $("#choice8").fadeIn();
+  
+});
+
+  $("#next3").click(function(){
+    $("#text5").fadeOut();
+    $("#next3").fadeOut();
+    $("#date2").fadeOut();
+    $("#2bun").fadeOut();
+    $("#para2").fadeOut();
+    $("#day4").fadeIn();
+    $("#section5").hide();
+
+  });
+
+  $("#day4").click(function(){
+    $("#section5").fadeIn();
+    $("#day4").fadeOut();
+  });
 
 $("#day3").click(function(){
   $("#text4").fadeIn();

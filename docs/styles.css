@@ -74,7 +74,7 @@ body {
     
   }
 
-  #date,#choice3,#choice4,#next,#next2,#next3,#next4,#day2,#choice5,#choice6,#choice7,#choice8,#day3{
+  #date,#choice3,#choice4,#next,#next2,#next3,#next4,#day2,#choice5,#choice6,#choice7,#choice8,#day3,#day4{
 
     /*マウスカーソルを変える*/
     cursor: pointer;
@@ -83,7 +83,7 @@ body {
   }
 
   #date:hover,#choice3:hover,#choice4:hover,#choice5:hover,#choice6:hover,#next:hover,#next2:hover,#day2:hover,
-  #day3:hover,#choice7:hover,#choice8:hover,#next3:hover,#next4:hover{
+  #day3:hover,#choice7:hover,#choice8:hover,#next3:hover,#next4:hover,#day4:hover{
     /*ホバーすると文字に影がつく*/
     text-shadow: 0 0 0.5em #000000;
     transition: all 0.5s;
@@ -96,7 +96,7 @@ body {
   }
 
   #text1,#text2,#text3,#text4,#text5,#text6,#park,#pool,#next,#next2,#next3,#next4,#section3,#date2,#para2,#me2,#choice5,#choice6
-  #choice7,#gohome,#sea,#day4{
+  #choice7,#gohome,#sea,#day4,#section5{
     display: none;
     animation: fadeIn 1s ease-in-out;
   }
@@ -212,7 +212,7 @@ body {
     }
 
     #text1,#text2,#text3,#text4,#text5,#text6,#park,#pool,#next,#next2,#next3,#next4,#section3,#date2,#para2,#me2,#choice5,#choice6
-  #choice7,#gohome,#sea,#day4{
+  #choice7,#gohome,#sea,#day4,#section5{
     display: none;
     animation: fadeIn 1s ease-in-out;
   }
