@@ -107,7 +107,14 @@ h1 {
 #next9,
 #day8,
 #day9,
-#back2{
+#back2,
+#next10,
+#day10,
+#next11,
+#day11,
+#next12,
+#day12,
+#back3{
   cursor: pointer;
 }
 
@@ -136,7 +143,14 @@ h1 {
 #next9:hover,
 #day8:hover,
 #day9:hover,
-#back2:hover{
+#back2:hover,
+#next10:hover,
+#day10:hover,
+#next11:hover,
+#day11:hover,
+#next12:hover,
+#day12:hover,
+#back3:hover{
   text-shadow: 0 0 0.5em #000000;
   transition: all 0.5s;
 }
@@ -196,9 +210,30 @@ button,#section4,#nikki,
 #back2,
 #nikki,
 #marmaid,
-#loop{
+#loop,
+#next10,
+#day10,
+#date10,
+#next11,
+#day11,
+#date11,
+#next12,
+#day12,
+#date12,
+#back3,
+#ghost{
   display: none;
   animation: fadeIn 1s ease-in-out;
+}
+
+#author{
+ padding-top: 3rem;
+ padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+
+  border-bottom: solid 1px #000000;
+  
 }
 
 
@@ -232,11 +267,12 @@ footer {
   font-size: 0.7rem;
 }
 
-#kaseijin,#marmaid{
+#kaseijin,#marmaid,#ghost{
 
   max-width: 50%;
   max-height: 50%;
 }
+
 
 #loop{
 
@@ -401,7 +437,7 @@ button:hover{
     animation: fadeIn 1s ease-in-out;
   }
 
-  #kaseijin{
+  #kaseijin,#marmaid,#ghost{
 
     max-width: 80%;
     max-height: 80%;

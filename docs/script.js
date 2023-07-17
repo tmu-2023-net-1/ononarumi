@@ -81,6 +81,9 @@ $("#choice4").click(function(){
       $("#choice8").fadeOut();
       $("#choice7").fadeOut();
       $("#gohome").fadeIn();
+      $("#next10").fadeIn();
+      //ゆっくり下へスクロール
+      $('html,body').animate({scrollTop:$('#gohome').offset().top});
 
 
   });
@@ -90,6 +93,8 @@ $("#choice4").click(function(){
       $("#choice7").fadeOut();
       $("#sea").fadeIn();
       $("#next7").fadeIn();
+      //ゆっくり下へスクロール
+      $('html,body').animate({scrollTop:$('#sea').offset().top});
 
   });
 
@@ -194,6 +199,31 @@ $("#next7").click(function(){
     $("#day9").fadeIn();
   });
 
+  $("#next10").click(function(){
+      
+      $("#next10").fadeOut();
+      $("#date9").fadeOut();
+      $("#gohome").fadeOut();
+      $("#date3").fadeOut();
+      $("#para3").fadeOut();
+      $("#day9").fadeOut();
+      $("#day10").fadeIn();
+      $("date10").fadeIn();
+  });
+
+  $("#next11").click(function(){
+    $("#next11").fadeOut();
+    $("#date10").fadeOut();
+    $("#day10").fadeOut();
+    $("#day11").fadeIn();
+  });
+
+  $("#next12").click(function(){
+    $("#next12").fadeOut();
+    $("#date11").fadeOut();
+    $("#day11").fadeOut();
+    $("#day12").fadeIn();
+  });
 
 $("#day6").click(function(){
 
@@ -235,7 +265,32 @@ $("#day9").click(function(){
   $('html,body').animate({scrollTop:$('#date9').offset().top});
 
 });
+$("#day10").click(function(){
 
+  $("#day10").fadeOut();
+  $("#date10").fadeIn();
+  $("#next11").fadeIn();
+  //ゆっくり下へスクロール
+  $('html,body').animate({scrollTop:$('#date10').offset().top});
+});
+
+$("#day11").click(function(){
+
+  $("#day11").fadeOut();
+  $("#date11").fadeIn();
+  $("#next12").fadeIn();
+  //ゆっくり下へスクロール
+  $('html,body').animate({scrollTop:$('#date11').offset().top});
+});
+
+$("#day12").click(function(){
+
+  $("#day12").fadeOut();
+  $("#date12").fadeIn();
+  $("#back3").fadeIn();
+  //ゆっくり下へスクロール
+  $('html,body').animate({scrollTop:$('#date12').offset().top});
+});
 
   $("#day4").click(function(){
     $("#section5").fadeIn();
@@ -316,7 +371,7 @@ $("#back2").click(function(){
   $("#back2").fadeOut();
   $("#date9").fadeOut();
   $("#day9").fadeOut
-  //画像(kaseijin.png）を表示
+  
   $("#marmaid").fadeIn();
 
     //ゆっくり下へスクロール
@@ -326,6 +381,22 @@ $("#back2").click(function(){
     $("button").fadeIn();
     $("#nikki").fadeIn();
 
+
+});
+
+$("#back3").click(function(){
+
+  $("#back3").fadeOut();
+  $("#date12").fadeOut();
+  $("#day12").fadeOut
+  $("#ghost").fadeIn();
+
+    //ゆっくり下へスクロール
+    $('html,body').animate({scrollTop:$('#ghost').offset().top});
+    //トップに戻るボタンを表示
+    $("#top").fadeIn();
+    $("button").fadeIn();
+    $("#nikki").fadeIn();
 
 });
 
