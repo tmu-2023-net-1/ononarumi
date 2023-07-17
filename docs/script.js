@@ -152,11 +152,25 @@ $("#next2").click(function(){
   
   });
 
-
+$("#next5").click(function(){
+  $("#next5").fadeOut();
+  $("#section5").fadeOut();
+  $("#day5").fadeIn();
+  
+});
 
   $("#day4").click(function(){
     $("#section5").fadeIn();
     $("#day4").fadeOut();
+    //ゆっくり下へスクロール
+    $('html,body').animate({scrollTop:$('#section5').offset().top});
+  });
+
+  $("#day5").click(function(){
+    $("#day5").fadeOut();
+    $("#date5").fadeIn();
+    //ゆっくり下へスクロール
+    $('html,body').animate({scrollTop:$('#date5').offset().top});
   });
 
 $("#day3").click(function(){
