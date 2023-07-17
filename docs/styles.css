@@ -195,21 +195,14 @@ button,#section4,#nikki,
 #date9,
 #back2,
 #nikki,
-#marmaid{
+#marmaid,
+#loop{
   display: none;
   animation: fadeIn 1s ease-in-out;
 }
 
-#loop {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
-#loop > div {
-  margin-bottom: 10px;
-  width: 100%;
-}
+
 
 @keyframes fadeIn {
   0% {
@@ -243,6 +236,13 @@ footer {
 
   max-width: 50%;
   max-height: 50%;
+}
+
+#loop{
+
+  max-width: 10%;
+  max-height: 10%;
+  padding-left: 4.5rem;
 }
 
 #nikki{

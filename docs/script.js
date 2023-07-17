@@ -140,14 +140,14 @@ $("#next2").click(function(){
     $("#2bun").fadeOut();
     $("#para2").fadeOut();
     $("#section5").hide();
-    $("#endress").fadeIn();
+    $("#nikki").fadeIn();
+    $("#loop").fadeIn();
+    $("button").fadeIn();
 
-    //5秒後にリロードする
-    setTimeout(function(){
-      location.reload();
-    }
-    ,6000);
+    //ゆっくり下へスクロール
+    $('html,body').animate({scrollTop:$('#nikki').offset().top});
 
+   
   
   });
 
