@@ -19,6 +19,15 @@ body {
   overflow: auto;
 }
 
+#sea{
+  max-width: 100%;
+  max-height:100%;
+
+ 
+  
+  
+}
+
 #container {
   display: flex;
   flex-direction: column;
@@ -53,7 +62,7 @@ h1 {
   margin-top: 5rem;
   font-size: 1.25rem;
   color: #000000;
-  padding-top: 12rem;
+ 
 }
 
 #date,
@@ -91,7 +100,14 @@ h1 {
 #day5,
 #next6,
 #day6,
-#back {
+#back,
+#next7 ,
+#day7,
+#next8,
+#next9,
+#day8,
+#day9,
+#back2{
   cursor: pointer;
 }
 
@@ -113,7 +129,14 @@ h1 {
 #next5:hover,
 #next6:hover,
 #day6:hover,
-#back:hover {
+#back:hover,
+#next7:hover,
+#day7:hover,
+#next8:hover,
+#next9:hover,
+#day8:hover,
+#day9:hover,
+#back2:hover{
   text-shadow: 0 0 0.5em #000000;
   transition: all 0.5s;
 }
@@ -155,7 +178,24 @@ p {
 #back,
 #kaseijin,
 #top,
-button{
+button,#section4,#nikki,
+#choice8 ,
+#date3,
+#para3,
+#me3,
+#day3,
+#next7,
+#day7,
+#date7,
+#next8,
+#next9,
+#date8,
+#day8,
+#day9,
+#date9,
+#back2,
+#nikki,
+#marmaid{
   display: none;
   animation: fadeIn 1s ease-in-out;
 }
@@ -199,7 +239,7 @@ footer {
   font-size: 0.7rem;
 }
 
-#kaseijin{
+#kaseijin,#marmaid{
 
   max-width: 50%;
   max-height: 50%;

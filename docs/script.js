@@ -89,6 +89,7 @@ $("#choice4").click(function(){
       $("#choice8").fadeOut();
       $("#choice7").fadeOut();
       $("#sea").fadeIn();
+      $("#next7").fadeIn();
 
   });
 
@@ -107,18 +108,16 @@ $("#next2").click(function(){
   
   
   $("#pool").fadeOut();
+  $("#1bun").fadeOut();
+  $("#date1").fadeOut();
   $("#next2").fadeOut();
   $("#date2").fadeOut();
   $("#2bun").fadeOut();
   $("#para2").fadeOut();
   $("#day2").fadeOut();
-  $("#text4").fadeIn();
+
   $("#day3").fadeIn();
-  $("#section4").fadeIn();
-  $("#para3").fadeIn();
-  $("#me3").fadeIn();
-  $("#choice7").fadeIn();
-  $("#choice8").fadeIn();
+ 
   
 });
 
@@ -167,6 +166,35 @@ $("#next6").click(function(){
   $("#day6").fadeIn();
 });
 
+$("#next7").click(function(){
+
+  $("#next7").fadeOut();
+  $("section4").fadeOut();
+  $("#date3").fadeOut();
+  $("#para3").fadeOut();
+  $("#sea").fadeOut();
+  $("#day7").fadeIn();
+
+});
+
+  $("#next8").click(function(){
+    
+    $("#next8").fadeOut();
+    $("#date7").fadeOut();
+    $("#day7").fadeOut();
+    $("#day8").fadeIn();
+  
+  });
+
+  $("#next9").click(function(){
+
+    $("#next9").fadeOut();
+    $("#date8").fadeOut();
+    $("#day8").fadeOut();
+    $("#day9").fadeIn();
+  });
+
+
 $("#day6").click(function(){
 
   $("#day6").fadeOut();
@@ -176,6 +204,38 @@ $("#day6").click(function(){
   $('html,body').animate({scrollTop:$('#date6').offset().top});
 
 });
+
+$("#day7").click(function(){
+
+  $("#day7").fadeOut();
+  $("#date7").fadeIn();
+  $("#next8").fadeIn();
+  //ゆっくり下へスクロール
+  $('html,body').animate({scrollTop:$('#date7').offset().top});
+
+});
+
+$("#day8").click(function(){
+
+  $("#day8").fadeOut();
+  $("#date8").fadeIn();
+  $("#next9").fadeIn();
+  //ゆっくり下へスクロール
+  $('html,body').animate({scrollTop:$('#date8').offset().top});
+
+
+});
+
+$("#day9").click(function(){
+
+  $("#day9").fadeOut();
+  $("#date9").fadeIn();
+  $("#back2").fadeIn();
+  //ゆっくり下へスクロール
+  $('html,body').animate({scrollTop:$('#date9').offset().top});
+
+});
+
 
   $("#day4").click(function(){
     $("#section5").fadeIn();
@@ -197,7 +257,13 @@ $("#day3").click(function(){
   $("#section4").fadeIn();
   $("#para3").fadeIn();
   $("#me3").fadeIn();
+  $("#date3").fadeIn();
+  $("#choice7").fadeIn();
+  $("#choice8").fadeIn();
   $("#day3").fadeOut();
+  //ゆっくり下へスクロール
+  $('html,body').animate({scrollTop:$('#section4').offset().top});
+  
   
 });
 
@@ -243,6 +309,24 @@ $("#back").click(function(){
     $("button").fadeIn();
     $("#nikki").fadeIn();
   
+});
+
+$("#back2").click(function(){
+
+  $("#back2").fadeOut();
+  $("#date9").fadeOut();
+  $("#day9").fadeOut
+  //画像(kaseijin.png）を表示
+  $("#marmaid").fadeIn();
+
+    //ゆっくり下へスクロール
+    $('html,body').animate({scrollTop:$('#marmaid').offset().top});
+    //トップに戻るボタンを表示
+    $("#top").fadeIn();
+    $("button").fadeIn();
+    $("#nikki").fadeIn();
+
+
 });
 
 $("button").click(function(){
