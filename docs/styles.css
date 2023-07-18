@@ -60,7 +60,7 @@ h1 {
   writing-mode: vertical-rl;
   font-family: 'Noto Serif JP', serif;
   margin-top: 5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #000000;
  
 }
@@ -349,7 +349,7 @@ button:hover{
     writing-mode: vertical-rl;
     font-family: 'Noto Serif JP', serif;
     margin-top: 5rem;
-    font-size: 0.6rem;
+    font-size: 0.4rem;
     color: #000000;
     padding-top: 8rem;
   }
