@@ -483,6 +483,22 @@ button:hover{
     background-color: #f5f5f5;
     
   }
+
+  #date,
+#day2,
+#day3,
+#day4,
+#day5,
+#day6,
+#day7,
+#day8,
+#day9,
+#day10,
+#day11,
+#day12{
+  font-size: 0.9rem;
+}
+
 }
 
 
