@@ -62,6 +62,11 @@ h1 {
   margin-top: 5rem;
   font-size: 1.2rem;
   color: #000000;
+  overflow-x: scroll;
+  white-space: nowrap;
+  
+
+ 
  
 }
 
@@ -158,6 +163,7 @@ h1 {
 p {
   padding-top: 4rem;
   text-align: start;
+  word-wrap: break-word;
 }
 
 #text1,
@@ -235,6 +241,8 @@ button,#section4,#nikki,
   border-bottom: solid 1px #000000;
   
 }
+
+
 
 
 
@@ -463,8 +471,8 @@ button:hover{
 }
   #kaseijin,#marmaid,#ghost{
 
-    width: 80%;
-    max-height: 80%;
+    width: 100%;
+    max-height: 100%;
 
   }
 
@@ -483,6 +491,7 @@ button:hover{
     /*線を消す*/
     border: none;
     background-color: #f5f5f5;
+    color: #000000;
     font-size: 0.6rem;
     font-family: 'Noto Serif JP', serif;
   
