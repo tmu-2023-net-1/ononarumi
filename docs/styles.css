@@ -53,7 +53,7 @@ h1 {
   padding: 0;
 }
 
-#contents {
+#contents,#data12 {
   display: flex;
   justify-content: center;
   align-items: center;
