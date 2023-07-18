@@ -60,7 +60,7 @@ h1 {
   writing-mode: vertical-rl;
   font-family: 'Noto Serif JP', serif;
   margin-top: 5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #000000;
  
 }
@@ -327,6 +327,22 @@ button:hover{
 
   padding-top: 10rem;
 }
+
+#date,
+#day2,
+#day3,
+#day4,
+#day5,
+#day6,
+#day7,
+#day8,
+#day9,
+#day10,
+#day11,
+#day12{
+  font-size: 1.5rem;
+}
+
 
 
 
