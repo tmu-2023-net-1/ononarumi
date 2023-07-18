@@ -363,6 +363,8 @@ $("#back").click(function(){
     $("#top").fadeIn();
     $("button").fadeIn();
     $("#nikki").fadeIn();
+    $("#loop").hide();
+    $("#marmaid").hide();
   
 });
 
@@ -380,6 +382,8 @@ $("#back2").click(function(){
     $("#top").fadeIn();
     $("button").fadeIn();
     $("#nikki").fadeIn();
+    $("#loop").hide();
+    $("#kaseijin").hide();
 
 
 });
@@ -397,6 +401,8 @@ $("#back3").click(function(){
     $("#top").fadeIn();
     $("button").fadeIn();
     $("#nikki").fadeIn();
+    $("#loop").hide();
+    $("#marmaid").hide();
 
 });
 
