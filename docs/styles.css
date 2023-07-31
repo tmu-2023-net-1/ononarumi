@@ -160,6 +160,7 @@ p {
   padding-top: 4rem;
   text-align: start;
   word-wrap: break-word;
+  user-select: none;
 }
 
 #text1,
@@ -353,7 +354,7 @@ button:hover{
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   #text-wrapper {
     writing-mode: vertical-rl;
     text-orientation: mixed;
